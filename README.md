@@ -17,7 +17,7 @@ A fun and beginner-friendly web project built with **HTML**, **CSS**, and **Java
 - **Public APIs** (e.g., Joke API, Cat Facts API)
 
 ## 📷 Screenshot
-![Screenshot](images/screenshot.png)
+![Screenshot](images\html.jpg)
 
 ## 🚀 Getting Started
 
