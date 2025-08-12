@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage - Advanced</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+                <li><a href="#carousel">Image Carousel</a></li>
+                <li><a href="#api">Fun API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-layout">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>This is a responsive, interactive webpage built using HTML, CSS, and JavaScript.</p>
+            <img src="images/html.jpg" alt="Sample Image">
+            <br><br>
+            <button onclick="showAlert()">Click Me</button>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section id="todo">
+            <h2>My To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Enter new task">
+            <button id="addTaskBtn">Add Task</button>
+            <ul id="taskList"></ul>
+        </section>
+
+        <!-- Image Carousel Section -->
+        <section id="carousel">
+            <h2>Image Carousel</h2>
+            <div class="carousel">
+                <button id="prevBtn">&#10094;</button>
+                <img id="carouselImage" src="images/html.jpg" alt="Carousel Image">
+                <button id="nextBtn">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- API Section -->
+        <section id="api">
+            <h2>Random Joke Generator</h2>
+            <p id="joke">Click the button to load a joke...</p>
+            <button id="loadJokeBtn">Get Joke</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Interactive Webpage</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
